@@ -1,4 +1,4 @@
-#!/Users/spartan2194/Documents/Projects/BenAtCost.tech/env/bin/python
+#!/root/BenAtCost.tech/env/bin/python
 
 import sys
 import getopt
