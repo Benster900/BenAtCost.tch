@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve BenAtCost
+After=network.target
+
+[Service]
+User=nginx
+Group=nginx
+WorkingDirectory=/opt/BenAtCost.tech
+Environment="PATH=/opt/BenAtCost.tech/env/bin"
+ExecStart=/opt/BenAtCost.tech/env/bin/uwsgi --ini benatcost.ini
+
+[Install]
+WantedBy=multi-user.target
